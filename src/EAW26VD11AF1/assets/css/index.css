@@ -1,0 +1,204 @@
+.toast {
+    z-index: 2000;
+    position: fixed;
+    left: 50%;
+    top: 75%;
+    transition:all .5s;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+       -moz-transform: translateX(-50%) translateY(-50%);
+        -ms-transform: translateX(-50%) translateY(-50%);
+         -o-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    border-radius: 5px;
+    color:#FFF;
+    background: rgba(17, 17, 17, 0.7);
+    height: 45px;
+    line-height: 45px;
+    padding: 0 15px;
+    min-width: 150px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.flex-clo{
+    display: flex;
+    align-items: center;
+}
+/* =================================== 头部样式 */
+.echart-box{
+    position: relative;
+    z-index: 2;
+    margin-top: -46px;
+}
+.noOn{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 10px;
+    left: 0;
+    color: #333;
+    font-size:15px;
+}
+.echart-box .echarts {
+  width: 100%;
+  height: 100%;
+}
+.echart-box .brightness{
+    height: 100%;
+    background: pink;
+    position: absolute;
+    top:0;
+    bottom: 0;
+}
+#set_temperBox{
+    position: absolute;
+    top: 0;
+    text-align: center;
+}
+#set_temperBox .temper_sel{
+    height: 40px;
+}
+#set_temperBox .ico{
+    font-size: 20px;
+}
+#set_temperBox .left-ico{
+    font-size: 12px;
+}
+#set_temperBox .sym{
+    font-size: 14px;
+}
+#set_temperBox .temper_val{
+    font-weight: bolder;
+    font-size: 45px;
+}
+/* ===================================== 底部样式 */
+#bottomBox{
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    background: #fff;
+    text-align: center;
+    padding:0 8px;
+    box-sizing: border-box;
+    
+}
+#bottomBox li{
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    padding:20px 0;
+    position: relative;
+}
+#bottomBox li .maskBox{
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* background: rgba(102,102,102,0.5); */
+}
+#bottomBox li .icoBox{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border:1px solid rgba(222,222,222,0.5)
+}
+#bottomBox li .ico{
+    font-size: 20px;
+    color: #333;
+}
+#bottomBox li p{
+    font-size:12px;
+    color:#666;
+    padding-top: 5px;
+}
+/* 选中 */
+#bottomBox .sel .icoBox{
+    border:1px solid #5CBB9D;
+}
+#bottomBox .sel .ico{
+    color: #5CBB9D;
+}
+/* 禁用 */
+#bottomBox .dis .icoBox{
+    border:1px solid rgba(222,222,222,0.5)
+}
+#bottomBox .dis .ico{
+    color: #bfbfbf;
+}
+
+
+/* 离线温馨提示 */
+#offbox{
+    width: 100%;
+    height: 100%;
+    background: rgba(51,51,51,0.55);
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 20;
+}
+#offbox .con{
+    width: 85%;
+    background:rgba(255,255,255,1);
+    border-radius:5px;
+}
+#offbox .con .title{
+    text-align: center;
+    font-size:19px;
+    font-weight:400;
+    color:rgba(51,51,51,1);
+    padding: 20px 0 10px 0;
+}
+#offbox .con .content,#offbox .con p{
+    font-weight:400;
+    font-size:14px;
+    margin:0 20px;
+}
+#offbox .con .content{
+    color:rgba(51,51,51,1);
+}
+#offbox .con p{
+    color:rgba(102,102,102,1);
+}
+#offbox .con .know{
+    margin-top: 21px;
+    width: 100%;
+    height:44px;
+    background:rgba(92,187,157,1);
+    font-size:16px;
+    color: #fff;
+}
+/* .mint-header.header {
+    margin-top: 20px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F1F2F5;
+    color: #333;
+    padding: 0 30px;
+} */
+
+
+/* 滑动条 */
+
+.el-checkbox-group{
+    display: flex;
+    justify-content: center;
+}
+.el-switch__core{
+    height: 0.6933333333333333rem;
+    line-height: 0.6933333333333333rem;
+    border-radius: 0.3466666666666667rem;
+    width: 1.226666666666667rem!important;
+}
+.el-switch__core:after{
+    width: 0.6266666666666667rem;
+    height: 0.6266666666666667rem;
+    border-radius: 50%;
+}
+.el-switch.is-checked .el-switch__core::after{
+    margin-left: -0.6266666666666667rem;
+}

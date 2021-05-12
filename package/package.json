@@ -42,7 +42,7 @@
     "lodash.clonedeep": "^4.5.0",
     "mint-ui": "^2.2.13",
     "px2rem-loader": "^0.1.9",
-    "swiper": "^4.5.0",
+    "swiper": "^6.5.1",
     "vconsole": "^3.3.4",
     "vue-cli-plugin-multi-compiler": "^0.1.0",
     "vue-template-compiler": "^2.5.21"
